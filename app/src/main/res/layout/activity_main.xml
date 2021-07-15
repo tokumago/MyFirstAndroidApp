@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnChangeLang"
+        android:id="@+id/btnShowMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:onClick="subbtnChangeLang"
+        android:onClick="subbtnShowMessage"
         android:text="@string/changelanguage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +50,6 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnChangeLang" />
+        app:layout_constraintTop_toBottomOf="@+id/btnShowMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">Hallo Welt</string>
     <string name="welcome">Willkommen</string>
-    <string name="changelanguage">Sprache ändern</string>
+    <string name="changelanguage">Zeige Nachricht</string>
 </resources>

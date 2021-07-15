@@ -17,6 +17,7 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    Locale myLocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Implement the OnClickListener callback
-    public void subbtnChangeLang(View v) {
+    public void subbtnShowMessage(View v) {
         // do something when the button is clicked
         TextView output = findViewById(R.id.hola);
-        if (output.getText().equals("¡Hola mundo!")){
+        String appName = getString(R.string.app_name);
+        if (output.getText().equals(appName)){
             output.setText("");
-        }else
-        {
-            output.setText("¡Hola mundo!");
+        }else {
+            output.setText(appName);
         }
     }
 }

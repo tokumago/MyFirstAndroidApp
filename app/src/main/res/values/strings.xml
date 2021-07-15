@@ -2,5 +2,5 @@
     tools:locale="es">
     <string name="app_name">Hola mundo</string>
     <string name="welcome">Bienvenido</string>
-    <string name="changelanguage">Cambiar Idioma</string>
+    <string name="changelanguage">Muestra mensaje</string>
 </resources>
