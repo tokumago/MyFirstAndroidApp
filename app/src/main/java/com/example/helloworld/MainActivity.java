@@ -3,12 +3,16 @@ package com.example.helloworld;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -18,15 +22,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        final Button button = findViewById(R.id.btnChangeLang);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Locale locale = new Locale("fr_FR");
-                Locale.setDefault(locale);
-                Configuration config = new Configuration();
-                config.setLocale(locale);
-            }
-        });
+    // Implement the OnClickListener callback
+    public void subbtnChangeLang(View v) {
+        // do something when the button is clicked
+        TextView output = findViewById(R.id.hola);
+        if (output.getText().equals("¡Hola mundo!")){
+            output.setText("");
+        }else
+        {
+            output.setText("¡Hola mundo!");
+        }
     }
 }
